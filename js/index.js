@@ -1,5 +1,9 @@
 import { getPortfolioItem, portfolioLength } from "./portfolio.js";
 
+for (const item of getPortfolioItems()) {
+  new Image().src = item.path;
+}
+
 const debug = true;
 
 const circle = document.getElementById("circle");

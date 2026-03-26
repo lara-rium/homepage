@@ -101,9 +101,11 @@ const portfolio = {
   ],
 };
 
-export const getPortfolioItem = (idx) =>
+export const getPortfolioItems = () =>
   Object.entries(portfolio).flatMap(([k, v]) =>
     v.map((x) => ({ section: k, ...x })),
-  )[idx];
+  );
+
+export const getPortfolioItem = (idx) => getPortfolioItems()[idx];
 
 export const portfolioLength = Object.values(portfolio).flat().length;
