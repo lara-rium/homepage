@@ -1,0 +1,171 @@
+body {
+  align-items: center;
+  background-color: #e0c3ab;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  min-block-size: 100vb;
+  overflow: hidden;
+  padding-inline: 2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.middle {
+  block-size: 100vb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle-center {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin: 2rem;
+  min-block-size: 0;
+}
+
+.middle-center-elem {
+  max-block-size: 100%;
+  max-inline-size: 100%;
+  min-block-size: 0;
+  min-inline-size: 0;
+}
+
+.circle {
+  align-items: center;
+  animation: scale-down 0.7s;
+  aspect-ratio: 1;
+  background-color: #ace1af;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  transition:
+    opacity 0.7s ease,
+    scale 0.7s ease;
+  z-index: 1;
+}
+
+.circle-hidden {
+  opacity: 0;
+  scale: 125%;
+}
+
+@keyframes scale-down {
+  0% {
+    scale: 225%;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+.circle-text {
+  block-size: 70.71%;
+  inline-size: 70.71%;
+}
+
+.arrow {
+  inline-size: 4rem;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.arrow-left {
+  transform: scaleX(-1);
+
+  &:hover {
+    transform: scaleX(-1) translateX(10%);
+  }
+
+  &:active {
+    transform: scaleX(-1) translateX(25%) !important;
+  }
+}
+
+.arrow-left-hidden {
+  transform: scaleX(-1) translateX(200%) !important;
+}
+
+.arrow-right {
+  &:hover {
+    transform: translateX(10%);
+  }
+
+  &:active {
+    transform: translateX(25%) !important;
+  }
+}
+
+.arrow-right-hidden {
+  transform: translateX(200%) !important;
+}
+
+.text {
+  background-color: #ace1af;
+  font-family: swister, sans-serif;
+  font-style: normal;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.top-bottom {
+  align-self: center;
+  transition: transform 0.4s ease;
+}
+
+.section-text {
+  border-radius: 0 0 2rem 2rem;
+  font-weight: 800;
+}
+
+.section-text-hidden {
+  transform: translateY(-100%);
+}
+
+.bottom {
+  font-weight: 700;
+}
+
+.bottom-hidden {
+  transform: translateY(100%);
+}
+
+.description-text {
+  border-radius: 2rem 2rem 0 0;
+}
+
+.made-with-text {
+  align-items: center;
+  background-color: #b3a6de;
+  display: flex;
+  font-weight: 400;
+  justify-content: center;
+  padding: 0.1rem 2rem;
+}
+
+.made-with-icon {
+  block-size: 1rem;
+  margin-inline-start: 0.25rem;
+}
+
+.portfolio {
+  border-radius: 12px;
+  object-fit: contain;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+}
+
+.portfolio-hidden {
+  opacity: 0;
+  transform: scale(0.75);
+}
