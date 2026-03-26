@@ -8,7 +8,7 @@ for (const item of getPortfolioItems()) {
   new Image().src = item.path;
 }
 
-const debug = true;
+const debug = false;
 
 const circle = document.getElementById("circle");
 const circleText = document.getElementById("circle-text");
