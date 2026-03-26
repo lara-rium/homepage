@@ -1,4 +1,8 @@
-import { getPortfolioItem, portfolioLength } from "./portfolio.js";
+import {
+  getPortfolioItem,
+  portfolioLength,
+  getPortfolioItems,
+} from "./portfolio.js";
 
 for (const item of getPortfolioItems()) {
   new Image().src = item.path;
