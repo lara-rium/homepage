@@ -8,12 +8,18 @@ export default defineConfig([
   {
     extends: ["js/all"],
     files: ["**/*.{js,mjs,cjs}"],
-    languageOptions: { globals: globals.node },
+    languageOptions: { globals: globals.browser },
     linterOptions: {
       reportUnusedInlineConfigs: "warn",
     },
     plugins: { js },
     rules: {
+      "id-length": [
+        "warn",
+        {
+          exceptions: ["_"],
+        },
+      ],
       "no-console": "off",
       "no-magic-numbers": ["warn", { ignore: [0, 1] }],
       "no-ternary": "off",
@@ -22,7 +28,7 @@ export default defineConfig([
       "one-var": ["warn", "never"],
     },
   },
-  { files: ["**/*.js"], languageOptions: { sourceType: "commonjs" } },
+  { files: ["**/*.js"], languageOptions: { sourceType: "module" } },
   {
     extends: ["json/recommended"],
     files: ["**/*.json"],

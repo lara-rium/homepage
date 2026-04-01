@@ -1,109 +1,119 @@
 const portfolio = {
   "my work as part of BEST Ankara's VP of PR": [
     {
-      path: "assets/portfolio/board-logo.png",
       description: "logo of the BEST Ankara board",
       madeWith: ["ai"],
+      path: "assets/portfolio/board-logo.png",
     },
     {
-      path: "assets/portfolio/mail-signature.webp",
       description: "my mail signature design",
       madeWith: ["ai", "ae"],
+      path: "assets/portfolio/mail-signature.webp",
     },
     {
-      path: "assets/portfolio/course-story.png",
       description: "story design for the promotion of BEST courses",
       madeWith: ["ps"],
+      path: "assets/portfolio/course-story.png",
     },
     {
-      path: "assets/portfolio/mascot-cutout.png",
       description: "cutout for BEST Ankara's mascot",
       madeWith: ["ps"],
+      path: "assets/portfolio/mascot-cutout.png",
     },
     {
-      path: "assets/portfolio/mg-flyer.png",
       description: "flyer design for Engineering Day competition",
       madeWith: ["id"],
+      path: "assets/portfolio/mg-flyer.png",
     },
     {
-      path: "assets/portfolio/mg-post.png",
       description: "instagram post design for Engineering Day competition",
       madeWith: ["ps"],
+      path: "assets/portfolio/mg-post.png",
     },
     {
-      path: "assets/portfolio/mg-poster.png",
       description: "poster design for Engineering Day competition",
       madeWith: ["ps"],
+      path: "assets/portfolio/mg-poster.png",
     },
     {
-      path: "assets/portfolio/pasta-post.png",
       description: "instagram post design for BEST Ankara sponsors",
       madeWith: ["ai"],
+      path: "assets/portfolio/pasta-post.png",
     },
   ],
+  // eslint-disable-next-line sort-keys
   "my work as High School BEST Engineering Competition main organizer": [
     {
-      path: "assets/portfolio/hbec-gift-card.png",
       description: "gift card design",
       madeWith: ["ps"],
+      path: "assets/portfolio/hbec-gift-card.png",
     },
     {
-      path: "assets/portfolio/hbec-handbook-cover.png",
       description: "handbook cover design",
       madeWith: ["ps"],
+      path: "assets/portfolio/hbec-handbook-cover.png",
     },
     {
-      path: "assets/portfolio/hbec-introduction-post.png",
       description: "introduction post design",
       madeWith: ["ps"],
+      path: "assets/portfolio/hbec-introduction-post.png",
     },
     {
-      path: "assets/portfolio/hbec-nametag.png",
       description: "nametag design",
       madeWith: ["ps"],
+      path: "assets/portfolio/hbec-nametag.png",
     },
     {
-      path: "assets/portfolio/hbec-school-poster.png",
       description: "school poster design",
       madeWith: ["ps"],
+      path: "assets/portfolio/hbec-school-poster.png",
     },
     {
-      path: "assets/portfolio/hbec-schools-old.png",
       description: "old instagram post design",
       madeWith: ["ps"],
+      path: "assets/portfolio/hbec-schools-old.png",
     },
   ],
+  // eslint-disable-next-line sort-keys
   "designs i helped create for METU ID projects": [
     {
-      path: "assets/portfolio/breathe-right-stand-graphic.png",
       description: "cover for Breathe Right stand",
       madeWith: ["ai"],
+      path: "assets/portfolio/breathe-right-stand-graphic.png",
     },
     {
-      path: "assets/portfolio/gingerbread-man.png",
       description: "pattern for christmas postcard",
       madeWith: ["ai"],
+      path: "assets/portfolio/gingerbread-man.png",
     },
   ],
-  "designs i made for work (as much as NDA allows me to share)": [
+  "other designs": [
     {
-      path: "assets/portfolio/github-profile-picture.png",
       description: "github profile picture",
       madeWith: ["ps"],
+      path: "assets/portfolio/github-profile-picture.png",
+    },
+  ],
+  // eslint-disable-next-line sort-keys
+  "ceramic works": [
+    {
+      description: "ceramic mug for halloween",
+      madeWith: [],
+      path: "assets/portfolio/ceramic-mug.png",
     },
   ],
   "the end": [
     {
-      path: "assets/end-animation.webp",
-      description: 'this "the end" animation',
+      description: "looking forward to joining you!",
       madeWith: ["ae"],
+      path: "assets/end-animation.webp",
     },
   ],
 };
 
 export const getPortfolioItems = () =>
-  Object.entries(portfolio).flatMap(([k, v]) =>
-    v.map((x) => ({ section: k, ...x })),
+  Object.entries(portfolio).flatMap(([key, val]) =>
+    val.map((values) => ({ section: key, ...values })),
   );
 
 export const getPortfolioItem = (idx) => getPortfolioItems()[idx];

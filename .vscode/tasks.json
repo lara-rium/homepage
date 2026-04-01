@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    {
+      "command": "npx http-server -c-1",
+      "label": "run",
+      "type": "shell"
+    }
+  ],
+  "version": "2.0.0"
+}
