@@ -14,7 +14,7 @@ body {
 }
 
 .middle {
-  block-size: 100vb;
+  block-size: 100dvb;
   display: flex;
   flex-direction: column;
   inline-size: 100vi;
@@ -146,6 +146,10 @@ body {
 .top-bottom {
   align-self: center;
   transition: transform 0.4s ease;
+
+  @supports (-webkit-touch-callout: none) {
+    border-radius: 2rem !important;
+  }
 }
 
 .section-text {

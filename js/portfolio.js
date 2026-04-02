@@ -1,5 +1,5 @@
 const portfolio = {
-  "my work as part of BEST Ankara's VP of PR": [
+  "my work as BEST Ankara's VP of PR": [
     {
       description: "logo of the BEST Ankara board",
       madeWith: ["ai"],
@@ -41,7 +41,6 @@ const portfolio = {
       path: "assets/portfolio/pasta-post.png",
     },
   ],
-  // eslint-disable-next-line sort-keys
   "my work as High School BEST Engineering Competition main organizer": [
     {
       description: "gift card design",
@@ -87,6 +86,13 @@ const portfolio = {
       path: "assets/portfolio/gingerbread-man.png",
     },
   ],
+  "my work as METU Lindy Hop society social media responsible": [
+    {
+      description: "instagram post design",
+      madeWith: ["ai"],
+      path: "assets/portfolio/lindy-hop-jazz-post.png",
+    },
+  ],
   "other designs": [
     {
       description: "github profile picture",
@@ -104,7 +110,7 @@ const portfolio = {
   ],
   "the end": [
     {
-      description: "looking forward to joining you!",
+      description: "looking forward to joining you in ID!",
       madeWith: ["ae"],
       path: "assets/end-animation.webp",
     },

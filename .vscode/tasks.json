@@ -3,6 +3,7 @@
     {
       "command": "npx http-server -c-1",
       "label": "run",
+      "problemMatcher": [],
       "type": "shell"
     }
   ],
