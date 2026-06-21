@@ -73,6 +73,13 @@ const portfolio = {
       path: "assets/portfolio/hbec-schools-old.png",
     },
   ],
+  "my work as METU Lindy Hop society social media responsible": [
+    {
+      description: "instagram post design",
+      madeWith: ["ai"],
+      path: "assets/portfolio/lindy-hop-jazz-post.png",
+    },
+  ],
   // eslint-disable-next-line sort-keys
   "designs i helped create for METU ID projects": [
     {
@@ -86,33 +93,24 @@ const portfolio = {
       path: "assets/portfolio/gingerbread-man.png",
     },
   ],
-  "my work as METU Lindy Hop society social media responsible": [
-    {
-      description: "instagram post design",
-      madeWith: ["ai"],
-      path: "assets/portfolio/lindy-hop-jazz-post.png",
-    },
-  ],
-  "other designs": [
-    {
-      description: "github profile picture",
-      madeWith: ["ps"],
-      path: "assets/portfolio/github-profile-picture.png",
-    },
-  ],
   // eslint-disable-next-line sort-keys
+  "3D works": [
+    {
+      description: "accessory holder",
+      madeWith: ["fusion"],
+      path: "assets/portfolio/accessory-holder.png",
+    },
+  ],
   "ceramic works": [
     {
       description: "ceramic mug for halloween",
       madeWith: [],
       path: "assets/portfolio/ceramic-mug.png",
     },
-  ],
-  "the end": [
     {
-      description: "looking forward to joining you in ID!",
-      madeWith: ["ae"],
-      path: "assets/end-animation.webp",
+      description: "ceramic necklace",
+      madeWith: [],
+      path: "assets/portfolio/ceramic-necklace.png",
     },
   ],
 };
