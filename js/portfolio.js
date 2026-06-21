@@ -1,5 +1,5 @@
 const portfolio = {
-  "my work as BEST Ankara's VP of PR": [
+  "my designs as BEST Ankara's VP of PR": [
     {
       description: "logo of the BEST Ankara board",
       madeWith: ["ai"],
@@ -41,7 +41,7 @@ const portfolio = {
       path: "assets/portfolio/pasta-post.png",
     },
   ],
-  "my work as High School BEST Engineering Competition main organizer": [
+  "my designs as High School BEST Engineering Competition main organizer": [
     {
       description: "gift card design",
       madeWith: ["ps"],
@@ -73,7 +73,7 @@ const portfolio = {
       path: "assets/portfolio/hbec-schools-old.png",
     },
   ],
-  "my work as METU Lindy Hop society social media responsible": [
+  "my designs as METU Lindy Hop society social media responsible": [
     {
       description: "instagram post design",
       madeWith: ["ai"],
@@ -94,14 +94,14 @@ const portfolio = {
     },
   ],
   // eslint-disable-next-line sort-keys
-  "3D works": [
+  "3D designs": [
     {
       description: "accessory holder",
       madeWith: ["fusion"],
       path: "assets/portfolio/accessory-holder.png",
     },
   ],
-  "ceramic works": [
+  "ceramic designs": [
     {
       description: "ceramic mug for halloween",
       madeWith: [],
@@ -111,6 +111,11 @@ const portfolio = {
       description: "ceramic necklace",
       madeWith: [],
       path: "assets/portfolio/ceramic-necklace.png",
+    },
+    {
+      description: "ceramic plate",
+      madeWith: [],
+      path: "assets/portfolio/ceramic-plate.png",
     },
   ],
 };
