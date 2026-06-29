@@ -81,19 +81,6 @@ const portfolio = {
     },
   ],
   // eslint-disable-next-line sort-keys
-  "designs i helped create for METU ID projects": [
-    {
-      description: "cover for Breathe Right stand",
-      madeWith: ["ai"],
-      path: "assets/portfolio/breathe-right-stand-graphic.png",
-    },
-    {
-      description: "pattern for christmas postcard",
-      madeWith: ["ai"],
-      path: "assets/portfolio/gingerbread-man.png",
-    },
-  ],
-  // eslint-disable-next-line sort-keys
   "3D designs": [
     {
       description: "accessory holder",
